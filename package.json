@@ -1,0 +1,30 @@
+{
+  "name": "to-do_list-v2",
+  "version": "1.0.0",
+  "description": "version two of todo list where mongoose is been plugged in to use mongoDB database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olasmart18/To-do_list-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olasmart18/To-do_list-v2/issues"
+  },
+  "homepage": "https://github.com/olasmart18/To-do_list-v2#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
