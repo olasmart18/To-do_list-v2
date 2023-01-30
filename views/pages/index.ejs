@@ -14,15 +14,18 @@
 
     <div class="box">
         <% list.forEach(function(lists){ %>
-         <div class="item">
-             <input type="checkbox">
+            <form action="/delete" method="post">
+                <div class="item">
+             <input type="checkbox" name="checkbox" value="<%= lists._id %>" onchange="this.form.submit()">
               <p> <%= lists.name %> </p> 
-         </div>
+                </div>
+                <input type="hidden" name="listName" value="<%= title %>"></input>
+            </form>
          <%}) %>
 
-      <form class="" action="/" method="post">
+      <form class="item" action="/" method="post">
         <input type="text" name="newList" placeholder="new item" autocomplete="off"/>
-        <button type="submit" name="list" value=<%=title %>>+</button>
+        <button type="submit" name="list" value="<%= title %> " >+</button>
       </form>
     </div>
   </body>
